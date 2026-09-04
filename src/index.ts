@@ -2,18 +2,17 @@
 
 //imports 
 
-import express, { type Request, type Response } from "express";
-import { request } from "node:http";
+import express from "express";
 
 //criar aplicação
 
 const app = express()
 
-//criando rota principal com o GET
+//controller
+import login from"./controller/login.js";
 
-app.get("/", (req:Request, res: Response)=> {
-    res.send("Aula dois!")
-})
+app.use('/', login)
+
 
 
 app.listen(8080, ()=> {

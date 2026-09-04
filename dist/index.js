@@ -1,13 +1,11 @@
 // predefinido porta 8080
 //imports 
-import express, {} from "express";
-import { request } from "node:http";
+import express from "express";
 //criar aplicação
 const app = express();
-//criando rota principal com o GET
-app.get("/", (req, res) => {
-    res.send("Aula dois!");
-});
+//controller
+import login from "./controller/login.js";
+app.use('/', login);
 app.listen(8080, () => {
     console.log("Servidor Iniciado na porta 8080: http://localhost:8080");
 });
