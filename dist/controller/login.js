@@ -3,7 +3,7 @@ import express, { Router } from "express";
 const router = express.Router();
 //criando rota principal com o GET
 router.get("/", (req, res) => {
-    res.send("Aula três!");
+    res.send("Aula Quatro");
 });
 //exportar a instrução 
 export default router;
