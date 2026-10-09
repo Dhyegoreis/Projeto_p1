@@ -7,7 +7,7 @@ const router = express.Router()
 //criando rota principal com o GET
 
 router.get("/", (req:Request, res: Response)=> {
-    res.send("Aula Penutima aula")
+    res.send("Ultima aula")
 })
 
 //exportar a instrução 
